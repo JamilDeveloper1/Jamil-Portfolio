@@ -618,8 +618,11 @@ a.logo-end{
     .text-pro1{
         display: fl
     }
-    .text-pro1 p,.text-pro2 p{
+        .text-pro1 p{
         font-size: 10px;
+    }
+    .text-pro2 p{
+        font-size: 8px;
     }
 }
 
