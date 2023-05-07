@@ -608,6 +608,12 @@ a.logo-end{
 .text-side p{
     font-size: 12px;
 }
+        .text-pro1 p{
+        font-size: 10px;
+    }
+    .text-pro2 p{
+        font-size: 8px;
+    }
 }
 
 
