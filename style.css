@@ -200,7 +200,7 @@ ul.navbar li a{
 
 .projects{
     width: 90%;
-    height: 700px;
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -791,6 +791,18 @@ a.logo-end{
 
 
 @media (max-width:330px){
+    
+    
+    .main-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    
+    
+    
     .tech-para{
         font-size: 14px;
     }
@@ -889,7 +901,12 @@ a.logo-end{
 }
 
 
+@media(max-width:370px){
+    .tech-para{
+        font-size: 14px;
+}
 
+}
 
 
 
