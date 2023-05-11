@@ -200,13 +200,14 @@ ul.navbar li a{
 
 .projects{
     width: 90%;
-    height: 900px;
+    height:900px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
 }
+
 .pro-header{
     font-size: 48px;
     font-weight: 700;
@@ -339,13 +340,169 @@ a.logo-end{
 
 
 
+/* ================CONTACT IS HERE ==================*/
+
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-container h1{
+    color: var(--solid-heading);
+}
+
+.form-wrapper{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--heading);
+    border-radius: 20px;
+}
+
+.text-contact{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#form{
+    width: 35%;
+    height: 80%;
+    border: var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:20px ;
+    background-color: #fff;
+}
+
+.field{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.field input{
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--heading);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+
+.field input:focus{
+    outline: 1px solid #13B0F5;
+}
+
+
+.field textarea {
+    height: 80%;
+    padding: 0 5px ;
+    border-radius: 5px;
+}
+.field textarea:focus{
+    outline: 1px solid #13B0F5;
+    outline: none;
+    border: 1px solid var(--heading);
+}
+
+
+label{
+    font-size: 20px;
+}
+label::first-letter{
+    text-transform: uppercase;
+}
+
+.btn-form{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 
 
 
+
+.btn-form #button{
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    background:#a0a1da;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px 2px black;
+    border: none;
+}
+
+.btn-form #button:active{
+    box-shadow: none;
+}
+
+
+
+.text-contact .about-my-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.text-contact .form-media li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+.text-contact .form-media li:hover{
+    transform: scale(120%);
+}
+
+
+
+.text-contact .form-media li a{
+    text-decoration: none;
+    color: var(--solid-heading);
+}
+
+
+
+.cont-texts{
+    width: 90%;
+    height: 50%;
+    color: var(--solid-heading);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 
 
 /* RESPONSIVE IS HERE */
+
 
 
 
@@ -504,21 +661,6 @@ a.logo-end{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:500px){
     .navbar,.nav-social-media{
         display: none;
@@ -592,32 +734,23 @@ a.logo-end{
     width: 150px;
     height: 150px;
     padding: 0;
-
 }
-
-
 .tech-header{
     font-size: 24px;
 }
 .tech-para{
     font-size: 20px;
 }
-
-
-
 .pro-header{
     font-size: 24px;
 }
 .pro-lit-head{
     font-size: 20px;
 }
-
 .project1,.project2{
     width: 100%;
     height: 30%;
 }
-
-
 .project1 img,.project2 img{
     width: 40%;
 }
@@ -627,6 +760,48 @@ a.logo-end{
 .text-pro1 p,.text-pro2 p{
     font-size: 14px;
 }
+
+
+
+
+
+
+/* CONTACT IS HERE */
+
+
+
+.form-wrapper{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+#form{
+    width: 100%;
+}
+
+
+.text-contact{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.text-contact h1{
+    font-size: 20px;
+}
+.text-contact p{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
 
 
 .contact-center{
@@ -766,6 +941,20 @@ a.logo-end{
 .text-pro1 p,.text-pro2 p{
     font-size: 14px;
 }
+
+
+
+.text-contact h1{
+    font-size: 16px;
+}
+.text-contact p{
+    font-size: 14px;
+}
+
+
+
+
+
 }
 
 
@@ -779,55 +968,55 @@ a.logo-end{
     font-size: 16px;
 }
 .text-side p{
-    font-size: 12px;
+    font-size: 16px;
 }
-        .text-pro1 p{
-        font-size: 10px;
-    }
-    .text-pro2 p{
-        font-size: 8px;
-    }
+.text-pro1 p{
+    font-size: 10px;
+}
+.text-pro2 p{
+    font-size: 8px;
+}
+
+
+
+.text-contact h1{
+    font-size: 16px;
+}
+.text-contact p{
+    font-size: 14px;
+}
+
+
+
+
+
 }
 
 
 @media (max-width:330px){
-    
-    
-    .main-nav{
+.main-nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-    
-    
-    
-    
+.text-side p{
+    font-size: 14px;
+}
+
     .tech-para{
         font-size: 14px;
     }
     .text-pro1{
         display: fl
     }
-        .text-pro1 p{
+    .text-pro1 p{
         font-size: 10px;
     }
     .text-pro2 p{
         font-size: 8px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -865,25 +1054,6 @@ a.logo-end{
 }
 
 
-.about-p{
-    font-size: 30px;
-    color: var(--light-content);
-    animation-name: aboutP;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;
-    border-radius: 10px;
-}
-
-
-@keyframes aboutP{
-    0%{
-        box-shadow: 0 ;
-    }
-    100%{
-        box-shadow: 2px 2px 4px 4px var(--solid-heading) ;
-    }
-}
 
 
 
@@ -901,15 +1071,13 @@ a.logo-end{
 }
 
 
+
 @media(max-width:370px){
     .tech-para{
         font-size: 14px;
 }
 
 }
-
-
-
 
 
 @media(max-width:400px){
@@ -925,3 +1093,14 @@ a.logo-end{
         font-size: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
