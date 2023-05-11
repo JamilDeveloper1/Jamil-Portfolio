@@ -644,14 +644,13 @@ label::first-letter{
 
 
 .text-contact{
-    width: 100%;
     height: 60%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    }
+}
 .text-contact h1{
     font-size: 20px;
 }
@@ -661,7 +660,11 @@ label::first-letter{
 
 
 
-
+.text-contact .rarely-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -819,7 +822,6 @@ label::first-letter{
     width: 100%;
 }
 
-
 .text-contact{
     width: 100%;
     height: 60%;
@@ -829,13 +831,18 @@ label::first-letter{
     display: flex;
     justify-content: flex-start;
     }
+
 .text-contact h1{
     font-size: 20px;
 }
 .text-contact p{
     font-size: 16px;
 }
-
+.text-contact .rarely-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -984,14 +991,9 @@ label::first-letter{
 }
 
 .text-contact{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    text-align: center;
     display: flex;
     justify-content: flex-start;
-    }
+}
 
 .text-contact h1{
     font-size: 16px;
@@ -999,7 +1001,11 @@ label::first-letter{
 .text-contact p{
     font-size: 14px;
 }
-
+.text-contact .rarely-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -1025,7 +1031,11 @@ label::first-letter{
 .text-pro2 p{
     font-size: 8px;
 }
-
+.text-contact .rarely-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .text-contact h1{
@@ -1118,6 +1128,7 @@ label::first-letter{
     width: 100%;
 }
 
+
 .text-contact{
     width: 100%;
     height: 60%;
@@ -1134,7 +1145,11 @@ label::first-letter{
     font-size: 12px;
 }
 
-
+.text-contact .rarely-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
