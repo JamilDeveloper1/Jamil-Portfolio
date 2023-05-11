@@ -625,6 +625,39 @@ label::first-letter{
     font-size: 14px;
 }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    .form-wrapper{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+#form{
+    width: 100%;
+}
+
+
+.text-contact{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.text-contact h1{
+    font-size: 20px;
+}
+.text-contact p{
+    font-size: 16px;
+}
+    
 
 .contact-center{
     display: flex;
